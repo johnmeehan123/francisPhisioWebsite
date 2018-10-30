@@ -1,22 +1,113 @@
-body {
-    margin: 40px;
-  }
-  
-  .wrapper {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
-    grid-gap: 50px;
-    background-color: #fff;
+.blended_grid {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    margin: 50px auto 0 auto;
+}
+
+.pageContent {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    clear: none;
+    height: 200px;
+    width: 60%;
+}
+
+.pageRightMenu {
+    background-color: rgba(105, 31, 31, 0.5);
+    float: left;
+    clear: none;
+    height: 200px;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.services-area {
+    min-height: 40px;
+    padding: 20px 100px 30px;
+}
+
+@media (max-width:991px) {
+    .services-area {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.services-section {
     text-align: center;
-    justify-content: center;
-  }
-  
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 50%;
-  display: inline-block;
-    padding: 20px;
-    font-size: 150%;
-  }
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1150px;
+    min-width: 950px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #6f7070;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.service-section-header {
+    color: #9ab215;
+    font-size: 35px;
+}
+
+.individual-service {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.individual-service-1 {
+    width: 25%;
+}
+
+.individual-service-2 {
+    width: 100%;
+    padding: 30px;
+    -webkit-transition: opacity 283ms ease;
+    transition: opacity 283ms ease;
+    text-decoration: none
+}
+
+.individual-service-2:hover {
+    opacity: .75;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+.individual-service-3 {
+    max-width: 100%;
+    display: inline-block
+}
+
+.service-p {
+    margin-top: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #6f7070;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none
+}
+
+.service-icon {
+    width: 80px
+}
